@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+	</head>
+	<body>
+
+		<h1>Search:</h1>
+		<a href="https://youtube.com">YouTube</a>
+		<a href="https://www.google.com/drive/">Drive</a>
+		<a href="https://wiki.archlinux.org">Arch Wiki</a>
+
+	<script>
+	function search(){
+                var val = document.getElementById("search-field").value;
+                window.location.assign("https://duckduckgo.com/" + val)
+		}
+	function enterchk(event){
+		if (event.keyCode === 13){
+					search()
+			
+			}
+			}
+	</script>
+
+	<input type="text" placeholder="Search" id="search-field" onkeydown="enterchk(event)">
+	</body>
+</html>

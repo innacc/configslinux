@@ -1,0 +1,3 @@
+#!/bin/bash
+n1=$(wc -l < $1)
+unoconv -fpdf --stdout $n1 | zathura -      
